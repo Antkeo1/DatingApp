@@ -12,10 +12,10 @@ Rails.application.routes.draw do
   patch '/change-password' => 'users#changepw'
 
   post '/create-profile' => 'profiles#create'
-  get '/show-profile/:id' => 'profiles#show'
+  get '/show-profile/:name' => 'profiles#show'
   get '/show-all-profiles' => 'profiles#index'
   patch '/update-profile/:id' => 'profiles#update'
-  delete '/delete-profile/:id' => 'profiles#destroy'
+  delete '/delete-profile/:name' => 'profiles#destroy'
 
   post '/create-blog' => 'blogs#create'
   get '/show-blog/:id' => 'blogs#show'

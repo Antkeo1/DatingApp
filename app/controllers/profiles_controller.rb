@@ -10,7 +10,7 @@ class ProfilesController < OpenReadController
 
   # GET /profiles/1
   def show
-    render json: @profile
+    render json: Profile.find(params[:name])
   end
 
   # POST /profiles
