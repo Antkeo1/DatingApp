@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   post '/create-profile' => 'profiles#create'
   get '/show-profile/:name' => 'profiles#show'
   get '/show-all-profiles' => 'profiles#index'
-  patch '/update-profile/:id' => 'profiles#update'
+  # put '/update-profile/:id' => 'profiles#update'
   delete '/delete-profile/:name' => 'profiles#destroy'
 
   post '/create-blog' => 'blogs#create'
