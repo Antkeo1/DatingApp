@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require_relative 'boot'
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
 
 require 'rails'
 # Pick the frameworks you want:
