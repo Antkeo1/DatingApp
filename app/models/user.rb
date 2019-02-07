@@ -3,4 +3,5 @@
 class User < ApplicationRecord
   include Authentication
   has_many :profiles
+  mount_uploader :image, ImageUploader
 end
